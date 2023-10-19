@@ -6,10 +6,11 @@
 }
 
 body {
-    background: #00000008;
+    background: #080808;
     color: #fff;
 }
 
+/*--------------Header----------------*/
 #header {
     width: 100%;
     height: 100vh;
@@ -73,3 +74,73 @@ nav ul li a:hover::after{
     margin-top: 20px;
     font-size: 60px;
 }
+
+.header-text h1 span{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e6c400, 0 0 40px #e67b00, 0 0 50px #ff9100, 0 0 60px #ff6600, 0 0 70px #ff4800;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ffe44d, 0 0 40px #ffde4d, 0 0 50px #ffa34d, 0 0 60px #ffad50, 0 0 70px #ff8a47, 0 0 80px #ff6600;
+    }
+  }
+
+.typing {
+    width: 11ch;
+    animation: typing 1s steps(20), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+  
+@keyframes typing {
+    from {
+      width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+      border-color: transparent
+    }
+}
+/*---------------About----------------*/
+  #about {
+    padding: 80px 0;
+    color: #ababab;
+  }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+ 
