@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phong's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/10b915e5cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--------------Header---------------->
@@ -42,10 +44,70 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio dignissimos porro ducimus, perspiciatis vel voluptatum saepe aliquam eveniet, ipsa aspernatur voluptatibus quasi ratione necessitatibus! Odit amet nulla fugiat incidunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, delectus. Provident ipsum natus quae doloribus nam sit harum. Alias earum perspiciatis dolore consequuntur expedita id asperiores vel sit tempora quia!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nostrum ab doloribus labore itaque corrupti amet, fugit iure soluta non voluptate ea eum quo assumenda quaerat ipsum ipsa? Labore, quod.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quia aut ullam harum. Fugiat quisquam placeat, labore recusandae nostrum minus ut, magnam architecto eligendi hic ratione incidunt culpa neque ad.</li>
+                            <li><span>Algorithm <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic exercitationem illo nisi labore delectus dolores magni nihil, quaerat, at, corrupti quia id! Impedit neque omnis sunt voluptatem quos, est commodi.</li>
+                            <li><span>Web design <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias explicabo ducimus illo doloremque quod. Voluptatibus a obcaecati consequuntur, voluptas dicta ab harum, labore adipisci impedit officia itaque amet iste.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intership <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quia aut ullam harum. Fugiat quisquam placeat, labore recusandae nostrum minus ut, magnam architecto eligendi hic ratione incidunt culpa neque ad.</li>
+                            <li><span>Online <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic exercitationem illo nisi labore delectus dolores magni nihil, quaerat, at, corrupti quia id! Impedit neque omnis sunt voluptatem quos, est commodi.</li>
+                            <li><span>Work <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias explicabo ducimus illo doloremque quod. Voluptatibus a obcaecati consequuntur, voluptas dicta ab harum, labore adipisci impedit officia itaque amet iste.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quia aut ullam harum. Fugiat quisquam placeat, labore recusandae nostrum minus ut, magnam architecto eligendi hic ratione incidunt culpa neque ad.</li>
+                            <li><span>College <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic exercitationem illo nisi labore delectus dolores magni nihil, quaerat, at, corrupti quia id! Impedit neque omnis sunt voluptatem quos, est commodi.</li>
+                            <li><span>Higher education <br></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam molestias explicabo ducimus illo doloremque quod. Voluptatibus a obcaecati consequuntur, voluptas dicta ab harum, labore adipisci impedit officia itaque amet iste.</li>
+                        </ul>
+                    </div>
                 </div> 
             </div>
         </div>
     </div>
+<!---------------Services---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI engineer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium sed perferendis. Dignissimos ducimus dolores impedit eum doloribus minus facilis voluptatem, perspiciatis nostrum, perferendis ipsum optio aliquam amet eius placeat.</p>
+                    <a href="#"><span><b>Learn more</b></span></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium sed perferendis. Dignissimos ducimus dolores impedit eum doloribus minus facilis voluptatem, perspiciatis nostrum, perferendis ipsum optio aliquam amet eius placeat.</p>
+                    <a href="#"><span><b>Learn more</b></span></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium sed perferendis. Dignissimos ducimus dolores impedit eum doloribus minus facilis voluptatem, perspiciatis nostrum, perferendis ipsum optio aliquam amet eius placeat.</p>
+                    <a href="#"><span><b>Learn more</b></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------Project---------------->
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">Projects</div>
+    </div>
+</div>
 </body>
 </html>
