@@ -16,3 +16,14 @@ function opentab(tabname)
 	document.getElementById(tabname).classList.add("active-tab");
 }
 
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz7qIxJ26nGoLpb_MUghtjwmt9LQ4HLVQEoV-lCAqZqdAH92QJcrmwbIC_bWZPrKIYF/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
