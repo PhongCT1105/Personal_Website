@@ -1,2 +1,3 @@
 # Personal_Website
-Phong's personal website with html, css and js
+Phong's personal website using HTML, CSS, and js
+
